@@ -1,0 +1,301 @@
+body {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background: url('../Imagenes/img\ 6.jpeg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.header h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.breadcrumb {
+    position: relative;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.breadcrumb a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.breadcrumb span {
+    cursor: pointer;
+    text-decoration:underline;
+    color: #2440fb;
+    text-decoration: none;
+}
+.breadcrumb span:hover {
+    text-decoration:underline;
+    color: #2440fb;
+    text-decoration: underline;
+}
+.contact-info {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contact-info h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.info-direccion {
+    flex:auto;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.info-direccion i {
+    font-size: 2rem;
+    color: #2440fb;
+    margin-bottom: 10px;
+}
+
+.info-direccion h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.map-container {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    margin-bottom: 10px;
+}
+
+.form-container {
+    flex: 1;
+    min-width: 224px;
+    max-width: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 10px;
+    background-color: #2440fb ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #2440fb;
+}
+
+/*---- pie de pagina -----*/
+.pie-pagina{
+  width: 100%;
+  background-color: #2440fb;
+  margin-top: 10px;
+
+}
+.pie-pagina .grupo-1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap:50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box h2{
+  background: #f1fe33;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+  color: white;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+  display: inline-block;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  color: var(--cafe);
+  margin-right: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  transition: all 300ms ease;
+  border-radius: 50px;
+}
+
+.pie-pagina .box .acerca{
+  display: flex;
+  text-decoration: none;
+  flex-direction:column;
+  padding-bottom: 16px;
+  color: white;
+  transition: all 0.6s ease;
+  }
+  .pie-pagina .box .acerca:hover{
+  border-left: 1px solid white;
+  padding-left: 10px;
+  color: white;
+}
+
+.pie-pagina .grupo-1 .red-social .fa-instagram:hover{
+  background: linear-gradient(30deg, #3040e6 10%, #d41356, #e74f31, #f0d280);
+  transform: scale(1.1);
+  transition: 0.2s;
+  color: white;
+  transition: all 0.5s;
+}
+
+.pie-pagina .grupo-1 .red-social .fa-tiktok:hover{
+  background-color: rgb(34, 34, 34);
+  transform: scale(1.1);
+  transition: 0.2s;
+  color: white;
+  transition: all 0.5s;
+}
+
+.pie-pagina .grupo-1 .red-social .fa-twitter:hover{
+  background-color: #229df0;
+  transform: scale(1.1);
+  transition: 0.2s;
+  color: white;
+  transition: all 0.5s;
+}
+
+.pie-pagina .grupo-1 .red-social .fa-facebook:hover{
+  background-color: #2b60b1;
+  transform: scale(1.1);
+  transition: 0.2s;
+  color: white;
+  transition: all 0.5s;
+}
+
+.input-group{
+  display: flex;
+  flex-direction: column;  
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+}
+
+.input-cont, textarea{
+  padding: 10px 20px 10px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  width: 200px;
+  background-color: #fff;
+  border:  solid #fff;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder{
+  color: #133b19;
+}
+
+.btn{
+  color: #000000;
+  border-radius: 25px;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 10px 18px;
+  transition: all 0.6s ease;
+  font-size: 14px;
+  margin-left: 6px;
+  font-weight: 600;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: #090909;
+  font-weight: 100;
+}
+
+@media (max-width: 720px) {
+
+/*---- pie de pagina -----*/
+.pie-pagina {
+  width: 100%;
+}
+
+.pie-pagina .grupo-1 {
+  margin: auto;
+  display: block;
+  text-align: center;
+  padding: 15px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  margin-right: 10px;
+}
+
+.input-group{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn {
+  margin-left: 0px;
+}
+}

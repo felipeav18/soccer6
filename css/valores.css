@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.recipiente-btn{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav.recipiente-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding-left: 5px;
+    padding-top: 12px;
+}
+
+.btn-volver{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #333333aa;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.btn-volver > i{
+    font-size: 18px;
+}
+  
+/* Sección de contenido con imagen y texto */
+
+.content-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Para limitar el tamaño de la imagen */
+}
+
+.content-text {
+    padding: 20px;
+    flex: 1;
+}
+
+.content-text h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.content-text p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Sección de tarjetas */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+}
+
+.card-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+    
+    .content-image {
+        width: 100%;
+    }
+
+    .content-text {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .content-text h1 {
+        font-size: 22px;
+    }
+
+    .content-text p {
+        font-size: 14px;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}

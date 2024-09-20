@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Subir Imagen</title>
+</head>
+<body>
+    <h1>Subir Imagen</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="imagen">Selecciona una imagen:</label>
+        <input type="file" name="imagen" id="imagen" required>
+        <input type="submit" value="Subir Imagen">
+    </form>
+    
+    <div>
+        <h1>Actualizar Archivo</h1>
+        <form action="actualizar.php" method="POST" enctype="multipart/form-data">
+            <label for="id">ID del registro a actualizar:</label>
+            <input type="text" name="id" required>
+    
+            <label for="imagen">Selecciona una imagen:</label>
+            <input type="file" name="imagen" id="imagen" accept="uploads/*" required>
+    
+            <button type="submit">Actualizar imagen</button>
+        </form>
+    </div>
+</body>
+</html>

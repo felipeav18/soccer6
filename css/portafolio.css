@@ -1,0 +1,115 @@
+/*---cuadros---*/
+ 
+.recipiente-btn{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .nav.recipiente-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav{
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding-left: 5px;
+    padding-top: 12px;
+  }
+  
+  .btn-volver{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #333333aa;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  .btn-volver > i{
+    font-size: 18px;
+  }
+  
+
+.benefits-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.benefits-section h2 {
+    color: #f1fe33;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.benefits-section h1 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #2440fb;
+}
+
+.benefits-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.benefit {
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit:hover {
+    transform: scale(1.05);
+}
+
+.benefit img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.benefit-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: left;
+}
+
+.benefit-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.benefit-content p {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+    .benefits-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    
+}
